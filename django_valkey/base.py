@@ -374,6 +374,12 @@ class BackendCommands:
     def hexists(self: BaseValkeyCache, *args, **kwargs) -> bool:
         return self.client.hexists(*args, **kwargs)
 
+    def make_key(self: BaseValkeyCache, *args, **kwargs) -> bool:
+        return self.client.make_key(*args, **kwargs)
+
+    def make_pattern(self: BaseValkeyCache, *args, **kwargs) -> bool:
+        return self.client.make_pattern(*args, **kwargs)
+
 
 @decorate_all_methods(omit_exception)
 class AsyncBackendCommands:

@@ -51,6 +51,8 @@ methods_with_one_required_parameters = {
     "sunion",
     "touch",
     "ttl",
+    "make_key",
+    "make_pattern",
 }
 methods_with_two_required_parameters = {
     "add",
